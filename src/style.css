@@ -2,3 +2,7 @@
 .neue{
     font-family: 'Neue Montreal';
 }
+*::-webkit-scrollbar{
+    width: 0;
+    height: 0;
+}
