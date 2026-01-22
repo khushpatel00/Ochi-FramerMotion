@@ -1,5 +1,6 @@
 import React from 'react'
 import { ArrowUpRightIcon } from '@phosphor-icons/react'
+import { motion } from 'motion/react'
 
 function Landing() {
     return (
@@ -8,7 +9,7 @@ function Landing() {
                 {['We create', 'eye-opening', 'presentations'].map((item, index) => {
                     return (
                         <div className='flex items-center last:pt-3' key={index}>
-                            {index == 1 ? <img src="/images/landingDivider.jpg" className='rounded-xl w-50 h-auto duration-300 translate-y-[7%] me-3' alt="" /> : ''}
+                            {index == 1 ? <motion.div initial={{width: 0,}} drag dragConstraints={{top: 0 , bottom: 0 , left: 0 , right: 0 }} whileDrag={{scale: 0.8}} animate={{width: 'initial'}} transition={{ease: 'anticipate', duration: 1, delay: 0.5}} className='overflow-x-hidden translate-y-[7%] rounded-xl'><motion.img initial={{marginRight: 30}} animate={{marginRight: 15}} transition={{duration: 0.1, delay: 1.3, ease: 'easeInOut'}} src="/images/landingDivider.jpg" className='rounded-xl min-w-50 h-30 duration-300 pointer-events-none' alt="" /></motion.div> : ''}
                             <p key={index} className='font-semibold leading-33 text-zinc-800 text-[180px] font-[Founders_Grotesk_Condensed] uppercase'>{item}</p>
                         </div>
                     )
