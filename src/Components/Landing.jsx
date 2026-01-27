@@ -1,11 +1,16 @@
 import React from 'react'
 import { ArrowUpRightIcon } from '@phosphor-icons/react'
 import { motion } from 'motion/react'
+import 'locomotive-scroll/dist/locomotive-scroll.css'
+import Lenis from 'lenis'
+import LocomotiveScroll from 'locomotive-scroll'
 
 function Landing() {
+
+const scroll = new LocomotiveScroll();
+
     return (
-        <>
-            <div className='px-20 relative h-screen flex flex-col justify-center gap-0 overflow-x-hidden duration-300 -translate-y-1/8'>
+            <div data-scroll data-scroll-speed="-.001" className='px-20 relative h-screen flex flex-col justify-center gap-0 overflow-x-hidden duration-300 -translate-y-1/8'>
                 {['We create', 'eye-opening', 'presentations'].map((item, index) => {
                     return (
                         <div className='flex items-center last:pt-3' key={index}>
@@ -22,7 +27,6 @@ function Landing() {
                     <div className='flex items-center justify-center gap-2'><p className='uppercase border px-3 py-1 rounded-full font-normal tracking-wide cursor-pointer hover:bg-zinc-800 hover:text-white duration-300 hover:border-zinc-800 text-black'>Start The Project </p> <ArrowUpRightIcon size={32} className='border rounded-full p-1 hover:bg-zinc-800 hover:border-zinc-800 hover:text-white duration-300'/></div> 
                 </div>
             </div>
-        </>
     )
 }
 
