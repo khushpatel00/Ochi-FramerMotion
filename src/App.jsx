@@ -1,22 +1,20 @@
-import React from 'react';
 import Navbar from './Components/Navbar.jsx';
 import Landing from './Components/Landing.jsx';
 import Marquee from './Components/Marquee.jsx';
 import About from './Components/About.jsx';
-import 'locomotive-scroll/dist/locomotive-scroll.css'
-import Lenis from 'lenis'
-import LocomotiveScroll from 'locomotive-scroll'
-
-const scroll = new LocomotiveScroll();
+import Eyes from './Components/Eyes.jsx';
+import FeaturedProjects from './Components/FeaturedProjects.jsx';
 
 function App() {
   return (
-    <div>
+    <>
       <Navbar />
       <Landing />
       <Marquee />
       <About />
-    </div>
+      <Eyes />
+      {/* <FeaturedProjects /> */}
+    </>
   )
 }
 

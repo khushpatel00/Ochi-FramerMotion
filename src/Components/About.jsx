@@ -6,7 +6,7 @@ import LocomotiveScroll from 'locomotive-scroll'
 
 function About() {
     return (
-        <div data-scroll data-scroll-speed="-.1" data-scroll-section className='bg-[#CDEA68] rounded-2xl flex justify-between items-center py-20 '>
+        <div data-scroll data-scroll-speed="-.2" className='bg-[#CDEA68] rounded-2xl flex justify-between items-center py-20 '>
 
             <div>
                 <p className='text-7xl text-zinc-800 py-20 px-16 neue pe-30'>We craft category-defining presentations, brand identities, and digital experiences that drive funding, sales, and market leadership.</p>

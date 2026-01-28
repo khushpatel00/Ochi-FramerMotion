@@ -1,7 +1,6 @@
 import React from 'react'
 import { ArrowUpRightIcon } from '@phosphor-icons/react'
 import { motion } from 'motion/react'
-import 'locomotive-scroll/dist/locomotive-scroll.css'
 import Lenis from 'lenis'
 import LocomotiveScroll from 'locomotive-scroll'
 
@@ -10,7 +9,8 @@ function Landing() {
 const scroll = new LocomotiveScroll();
 
     return (
-            <div data-scroll data-scroll-speed="-.001" className='px-20 relative h-screen flex flex-col justify-center gap-0 overflow-x-hidden duration-300 -translate-y-1/8'>
+            // <div data-scroll data-scroll-speed="-.5" className='px-20 relative h-screen flex flex-col justify-center gap-0 overflow-x-hidden duration-300 -translate-y-1/8'>
+            <div data-scroll-section="" data-scroll="" data-scroll-offset="0, 100%" data-scroll-speed="-.3" data-scroll-position="bottom" data-scroll-section-id="section0" data-scroll-section-inview className='px-20 relative h-screen flex flex-col justify-center gap-0 overflow-x-hidden duration-300 -translate-y-1/8'>
                 {['We create', 'eye-opening', 'presentations'].map((item, index) => {
                     return (
                         <div className='flex items-center last:pt-3' key={index}>
@@ -20,7 +20,7 @@ const scroll = new LocomotiveScroll();
                     )
                 })}
 
-                <div className='absolute flex justify-between bottom-0 left-0 px-10 text-xl neue w-full border-t border-zinc-400 py-10  '>
+                <div className='absolute flex justify-between bottom-0 left-0 -translate-y-full px-10 text-xl neue w-full border-t border-zinc-400 py-10  '>
                     <p>Presentation and storytelling agency</p>
                     <p>For innovation teams and global brands</p>
 
