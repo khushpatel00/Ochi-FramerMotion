@@ -1,7 +1,7 @@
-import LocomotiveScroll from 'locomotive-scroll'
+// import LocomotiveScroll from 'locomotive-scroll'
 import { useState } from 'react';
 function Eyes() {
-  const locomotive = new LocomotiveScroll();
+  // const locomotive = new LocomotiveScroll();
   // const [mouseX, setMouseX] = new useState(0);
   // const [mouseY, setMouseY] = new useState(0);
   // let xindex = 0, yindex = 0;
