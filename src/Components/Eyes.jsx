@@ -34,8 +34,8 @@ function Eyes() {
       const off2 = calculateOffset(eye2Center);
 
       // each eye moves independently
-      setPupilPos1({ x: off1.x, y: off1.y });
-      setPupilPos2({ x: off2.x, y: off2.y });
+      setPupilPos1({ x: off1.x / 2, y: off1.y / 2 });
+      setPupilPos2({ x: off2.x / 2, y: off2.y / 2 });
       setHighlightPos1({ x: off1.x * highlightRatio, y: off1.y * highlightRatio });
       setHighlightPos2({ x: off2.x * highlightRatio, y: off2.y * highlightRatio });
     };
